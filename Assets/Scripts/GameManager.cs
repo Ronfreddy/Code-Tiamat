@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
     public GameObject tutorialStage;
 
     public bool hasStartedTutorial = false;
+    public float gameStartTime = 0f;
+    public float timeAlive = 0f;
 
     private void Awake()
     {
@@ -99,6 +101,13 @@ public class GameManager : MonoBehaviour
         InventoryManager.Instance.ResetInventory();
     }
 
+    public void OnResetTutorialSelected()
+    {
+        AudioManager.Instance.PlayClickSfx();
+        PlayerPrefs.SetInt("HasStartedTutorial", 0);
+        hasStartedTutorial = false;
+    }
+
     public void DestroyLobby(float delay = 0f)
     {
         DOVirtual.DelayedCall(delay, () =>
@@ -135,6 +144,7 @@ public class GameManager : MonoBehaviour
 
         DestroyLobby(1.5f);
         LevelManager.instance.StartNewLevel();
+        gameStartTime = Time.time;
     }
 
     public void OnTutorialSelected()
@@ -164,6 +174,7 @@ public class GameManager : MonoBehaviour
 
     public void OnGameOver()
     {
+        timeAlive = Time.time - gameStartTime;
         gameOverMenu.SetActive(true);
     }
 
