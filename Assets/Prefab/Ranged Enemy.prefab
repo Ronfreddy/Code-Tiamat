@@ -416,6 +416,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 8959505045657092315, guid: 4948b5f7915fefe47a8391e2006e1c88, type: 3}
   attackCooldown: 1
   projectileSpeed: 8
+  bulletSplitCount: 3
+  scatterAngle: 30
 --- !u!1 &5151502618172766076
 GameObject:
   m_ObjectHideFlags: 0

@@ -51,6 +51,24 @@ public class PlayerInputController : MonoBehaviour
         if (!canInput) return;
         if (Time.timeScale == 1)
         {
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                currentWeaponIndex = 0;
+                SwitchWeapon(currentWeaponIndex);
+                OnWeaponChange?.Invoke(currentWeaponIndex);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                currentWeaponIndex = 1;
+                SwitchWeapon(currentWeaponIndex);
+                OnWeaponChange?.Invoke(currentWeaponIndex);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                currentWeaponIndex = 2;
+                SwitchWeapon(currentWeaponIndex);
+                OnWeaponChange?.Invoke(currentWeaponIndex);
+            }
             if(Input.GetAxis("Mouse ScrollWheel") < 0f)
             {
                 currentWeaponIndex = (currentWeaponIndex + 1) % 3;
@@ -99,6 +117,15 @@ public class PlayerInputController : MonoBehaviour
         {
             InventoryManager.Instance.ToggleInventory();
             isInventoryOpen = !isInventoryOpen;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isInventoryOpen)
+            {
+                InventoryManager.Instance.ToggleInventory();
+                isInventoryOpen = false;
+            }
         }
 
         // Aim direction

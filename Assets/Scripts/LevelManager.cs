@@ -280,26 +280,35 @@ public class LevelManager : MonoBehaviour
     public void SpawnEnemies()
     {
         // calculate spawn count
-        int spawnCount = Mathf.CeilToInt(difficultySetting.enemySpawnRate.Evaluate(currentLevel));
+        int extraSpawnCount = Mathf.CeilToInt(difficultySetting.enemySpawnRate.Evaluate(currentLevel));
+        int bulkSpawnCount = Mathf.CeilToInt(difficultySetting.fixedEnemyPerRoom.Evaluate(currentLevel));
+
+        foreach (GameObject room in roomDictionary.Values)
+        {
+            RoomGrid roomGrid = room.GetComponent<RoomGrid>();
+            roomGrid.BulkSpawnEnemies(bulkSpawnCount);
+        }
 
         // spawn enemies
-        for (int i = 0; i < spawnCount; i++)
+        for (int i = 0; i < extraSpawnCount; i++)
         {
-            // get random enemy prefab
-            GameObject enemyPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
-
-            // get random spawn point
             GameObject spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Count)];
-
-            // instantiate enemy prefab at spawn point position
-            GameObject enemy = Instantiate(enemyPrefab, spawnPoint.transform.position, Quaternion.identity);
-            enemy.GetComponent<EnemyBase>().onDeathEvent += EnemyKilled;
-            enemy.GetComponent<EnemyBase>().InitializeStat(currentLevel);
-
-            // increment current enemy count
-            currentEnemyCount++;
-            enemyCount++;
+            SpawnEnemy(spawnPoint);
         }
+    }
+
+    // Spawn one enemy
+    public void SpawnEnemy(GameObject spawnPoint)
+    {
+        GameObject enemyPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
+
+        GameObject enemy = Instantiate(enemyPrefab, spawnPoint.transform.position, Quaternion.identity);
+        enemy.GetComponent<EnemyBase>().onDeathEvent += EnemyKilled;
+        enemy.GetComponent<EnemyBase>().InitializeStat(currentLevel);
+
+        // increment current enemy count
+        currentEnemyCount++;
+        enemyCount++;
     }
 
     public void CheckEnemies()

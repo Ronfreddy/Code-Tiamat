@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static Utilities.Utility;
 
 public class PartButton : MonoBehaviour
 {
@@ -12,25 +13,26 @@ public class PartButton : MonoBehaviour
 
     public void RecordPart(InventoryPart part)
     {
-        this.part = part.partType; // Store the part reference
+        this.part = part.partType;
         partQuantity = part.partCount;
-        UpdateImage(); // Update the UI image to reflect the part
+        UpdateImage();
     }
 
     public void UpdateImage()
     {
-        Image image = partImage.GetComponent<Image>(); // Get the Image component
+        Image image = partImage.GetComponent<Image>();
         if (part != null)
         {
-            image.sprite = part.partImage; // Set the image to the part's image
-            image.color = new Color(1, 1, 1, 1); // Make it visible
+            GetComponent<Image>().color = GetRarityColor(part.rarity);
+            image.sprite = part.partImage;
+            image.color = new Color(1, 1, 1, 1);
             if(partQuantity > 1)
                 partCount.text = partQuantity.ToString();
         }
         else
         {
-            image.sprite = null; // Clear the image if no part is assigned
-            image.color = new Color(1, 1, 1, 0); // Make it transparent
+            image.sprite = null;
+            image.color = new Color(1, 1, 1, 0); 
 
         }
     }
@@ -39,8 +41,8 @@ public class PartButton : MonoBehaviour
     {
         if(part != null)
         {
-            Item_Hover.instance.EnableHover(); // Enable hover effect
-            Item_Hover.instance.UpdateDescription(part); // Set item name
+            Item_Hover.instance.EnableHover();
+            Item_Hover.instance.UpdateDescription(part);
         }
         else
         {
@@ -50,6 +52,6 @@ public class PartButton : MonoBehaviour
 
     public void HideDescription()
     {
-        Item_Hover.instance.DisableHover(); // Disable hover effect
+        Item_Hover.instance.DisableHover();
     }
 }

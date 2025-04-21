@@ -6,6 +6,7 @@ public class RoomGrid : MonoBehaviour
 {
     // 0 = up, 1 = down, 2 = left, 3 = right
     public GameObject portalPoint;
+    public GameObject[] spawnPoints;
     public GameObject[] tunnels;
     public GameObject[] walls;
     public bool[] isTunnelOpen = new bool[4];
@@ -41,6 +42,20 @@ public class RoomGrid : MonoBehaviour
         }
         generateDoorChance *= generateDoorChanceDecay;
         return true;
+    }
+
+    public void BulkSpawnEnemies(int spawnCount)
+    {
+        if(spawnPoints.Length == 0)
+        {
+            Debug.LogWarning("No spawn points available to spawn enemies.");
+            return;
+        }
+        for (int i = 0; i < spawnCount; i++)
+        {
+            int randomSpawnPoint = Random.Range(0, spawnPoints.Length);
+            LevelManager.instance.SpawnEnemy(spawnPoints[randomSpawnPoint]);
+        }
     }
 }
 

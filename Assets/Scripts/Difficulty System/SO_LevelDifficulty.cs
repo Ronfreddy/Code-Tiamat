@@ -4,6 +4,7 @@ using UnityEngine;
 public class SO_LevelDifficulty : ScriptableObject
 {
     public AnimationCurve enemySpawnRate;
+    public AnimationCurve fixedEnemyPerRoom;
     public AnimationCurve roomCurve;
     public float lootDropChance;
 
@@ -25,6 +26,7 @@ public class SO_LevelDifficulty : ScriptableObject
     public float rangedAttackRange;
     public float rangedAttackCooldown;
     public float rangedBulletSpeed;
+    public int rangedBulletMaxSplitCount;
     public WeightedPartLootTable rangedLootTable;
 }
 

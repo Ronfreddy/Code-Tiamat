@@ -136,7 +136,18 @@ public class Weapon_Sword : WeaponBase
         if (collision.CompareTag("Enemy"))
         {
             collision.GetComponent<EnemyBase>().TakeDamage(AttackDamage);
+
+            // Knockback (got bug dont put first)
+            Vector2 knockbackDirection = (collision.transform.position - transform.parent.parent.position).normalized;
+            collision.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            collision.GetComponent<Rigidbody2D>().AddForce(knockbackDirection * 4f, ForceMode2D.Impulse);
+
             player.Heal(LifeSteal);
+        }
+
+        if (collision.CompareTag("Projectile"))
+        {
+            Destroy(collision.gameObject);
         }
     }
 

@@ -65,6 +65,7 @@ public class Character_HealthSystem : MonoBehaviour
     public void ResetStatus()
     {
         health = 100f;
+        Heal(12f);
         playerCollider.enabled = true;
     }
 }

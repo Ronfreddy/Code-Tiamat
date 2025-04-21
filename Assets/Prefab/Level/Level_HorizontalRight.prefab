@@ -6342,6 +6342,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portalPoint: {fileID: 7173276091148576283}
+  spawnPoints:
+  - {fileID: 999601667422215188}
+  - {fileID: 4327029650276724579}
+  - {fileID: 1073050742400787455}
+  - {fileID: 2007814920248603351}
   tunnels:
   - {fileID: 2218657277391716685}
   - {fileID: 1495983764670711295}
