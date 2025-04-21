@@ -1115,6 +1115,7 @@ MonoBehaviour:
   hardDifficulty: {fileID: 11400000, guid: 6e9ad47b7b2e1244f84b35cb1c4ebe29, type: 2}
   lunaticDifficulty: {fileID: 11400000, guid: e9b93f124f88ab341891ed6e49579621, type: 2}
   tutorialStage: {fileID: 3265300913532282316, guid: 5ab054977757c0847aac7862a63fcf2c, type: 3}
+  hasStartedTutorial: 0
 --- !u!4 &85994342
 Transform:
   m_ObjectHideFlags: 0
@@ -1456,7 +1457,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: a0922dcfd1dc81544be038a187db7126, type: 3}
   m_Resource: {fileID: 8300000, guid: a0922dcfd1dc81544be038a187db7126, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.7
+  m_Volume: 0.9
   m_Pitch: 1.2
   Loop: 0
   Mute: 0
