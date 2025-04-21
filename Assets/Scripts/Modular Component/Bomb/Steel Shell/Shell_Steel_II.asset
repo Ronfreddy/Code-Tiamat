@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9276fcfdc7c975e4aa917dab26e32d91, type: 3}
+  m_Name: Shell_Steel_II
+  m_EditorClassIdentifier: 
+  partName: Steel Shell
+  partType: Shell
+  compatibleWeapon: Bomb
+  partImage: {fileID: 238378663070858407, guid: f19b05fc6405fcd4986ceb4f08c8510e, type: 3}
+  lootSprite: {fileID: 238378663070858407, guid: a2ca28f1f25649442b9468dead37705f, type: 3}
+  rarity: 1
+  modifiers:
+  - key: Damage Multiplier
+    value: 19
+    color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Throw Force Multiplier
+    value: -30
+    color: {r: 1, g: 0, b: 0, a: 1}
+  - key: Charge Time Addition
+    value: -0.2
+    color: {r: 0, g: 1, b: 0, a: 1}
+  description: Classic~

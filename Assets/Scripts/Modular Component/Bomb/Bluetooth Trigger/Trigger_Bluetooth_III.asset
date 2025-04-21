@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9276fcfdc7c975e4aa917dab26e32d91, type: 3}
+  m_Name: Trigger_Bluetooth_III
+  m_EditorClassIdentifier: 
+  partName: Bluetooth Trigger
+  partType: Trigger
+  compatibleWeapon: Bomb
+  partImage: {fileID: 1691441748056476385, guid: a959fc9391814aa4987a4522c016882a, type: 3}
+  lootSprite: {fileID: 1691441748056476385, guid: 3fee6dd2eb7422f4d84377b06a7932d5, type: 3}
+  rarity: 2
+  modifiers:
+  - key: Radius Addition
+    value: 1.5
+    color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Trigger Time Addition
+    value: 0.5
+    color: {r: 1, g: 0, b: 0, a: 1}
+  description: Further but too lag.

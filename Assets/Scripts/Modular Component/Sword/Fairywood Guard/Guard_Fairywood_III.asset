@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9276fcfdc7c975e4aa917dab26e32d91, type: 3}
+  m_Name: Guard_Fairywood_III
+  m_EditorClassIdentifier: 
+  partName: Fairywood Guard
+  partType: Guard
+  compatibleWeapon: Sword
+  partImage: {fileID: 4016937825798531161, guid: 86196ff180b856f4d82c8169ef37cd28, type: 3}
+  lootSprite: {fileID: 4016937825798531161, guid: 1500319deaaaf0d48921d7f3870a3224, type: 3}
+  rarity: 2
+  modifiers:
+  - key: Damage Addition
+    value: -1
+    color: {r: 1, g: 0, b: 0, a: 1}
+  - key: Cooldown Multiplier
+    value: 35
+    color: {r: 0, g: 1, b: 0, a: 1}
+  description: A piece of mysterious wood.

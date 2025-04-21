@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9276fcfdc7c975e4aa917dab26e32d91, type: 3}
+  m_Name: Grip_Virus_III
+  m_EditorClassIdentifier: 
+  partName: Virus Grip
+  partType: Grip
+  compatibleWeapon: Bow
+  partImage: {fileID: -1807995862594775243, guid: 1e3cdf105a25d7b428d496174edbb795, type: 3}
+  lootSprite: {fileID: -1807995862594775243, guid: 404108a195a3e00438ba8dee6f1b2f06, type: 3}
+  rarity: 2
+  modifiers:
+  - key: Interval Multiplier
+    value: 240
+    color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Arrow Scatter Addition
+    value: 14
+    color: {r: 1, g: 0, b: 0, a: 1}
+  - key: Damage Addition
+    value: -5
+    color: {r: 1, g: 0, b: 0, a: 1}
+  description: Most chaotic parts. Contains malicious virus soul.

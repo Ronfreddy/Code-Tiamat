@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9276fcfdc7c975e4aa917dab26e32d91, type: 3}
+  m_Name: Guard_Leather_I
+  m_EditorClassIdentifier: 
+  partName: Leather Guard
+  partType: Guard
+  compatibleWeapon: Sword
+  partImage: {fileID: -3616451257336939681, guid: 5399156e573ba2342a7e44c9205823a3, type: 3}
+  lootSprite: {fileID: -3616451257336939681, guid: 9b288205050a6ad43979924b1a244c88, type: 3}
+  rarity: 0
+  modifiers:
+  - key: Cooldown Multiplier
+    value: 2
+    color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Size Multiplier
+    value: 10
+    color: {r: 0, g: 1, b: 0, a: 1}
+  description: Stable and handy.

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9276fcfdc7c975e4aa917dab26e32d91, type: 3}
+  m_Name: Quiver_Venom_II
+  m_EditorClassIdentifier: 
+  partName: Venom Quiver
+  partType: Quiver
+  compatibleWeapon: Bow
+  partImage: {fileID: 7824834311996121405, guid: ffb403815c3795445bc04cfa783c04b7, type: 3}
+  lootSprite: {fileID: 7824834311996121405, guid: 2f7d1140d6d8a6d4baecd036f9c31e76, type: 3}
+  rarity: 1
+  modifiers:
+  - key: Ammo Addition
+    value: 6
+    color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Damage Multiplier
+    value: 35
+    color: {r: 0, g: 1, b: 0, a: 1}
+  description: No poison effect because dev is lazy.

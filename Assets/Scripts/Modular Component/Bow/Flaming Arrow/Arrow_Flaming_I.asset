@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9276fcfdc7c975e4aa917dab26e32d91, type: 3}
+  m_Name: Arrow_Flaming_I
+  m_EditorClassIdentifier: 
+  partName: Flaming Arrow
+  partType: Arrow
+  compatibleWeapon: Bow
+  partImage: {fileID: 3661564022775179178, guid: 65eed3d733121a84a89af237fe9f72f0, type: 3}
+  lootSprite: {fileID: 3661564022775179178, guid: c0496bf8abccf76499b641c2a4784277, type: 3}
+  rarity: 0
+  modifiers:
+  - key: Damage Multiplier
+    value: 20
+    color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Arrow Speed Addition
+    value: -100
+    color: {r: 1, g: 0, b: 0, a: 1}
+  - key: Arrow Pierce Addition
+    value: 1
+    color: {r: 0, g: 1, b: 0, a: 1}
+  description: Sadly cannot ignite objects because dev is lazy.

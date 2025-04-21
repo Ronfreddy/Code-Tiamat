@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9276fcfdc7c975e4aa917dab26e32d91, type: 3}
+  m_Name: Module_EMP_IV
+  m_EditorClassIdentifier: 
+  partName: EMP Module
+  partType: Module
+  compatibleWeapon: Bomb
+  partImage: {fileID: 1992566182415991804, guid: c0a551987596e35478e54fe62239e7b5, type: 3}
+  lootSprite: {fileID: 1992566182415991804, guid: fcfbd78979817f24885b55206d3a9e6e, type: 3}
+  rarity: 3
+  modifiers:
+  - key: Throw Force Multiplier
+    value: 50
+    color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Charge Time Addition
+    value: -0.6
+    color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Cooldown Multiplier
+    value: 25
+    color: {r: 0, g: 1, b: 0, a: 1}
+  description: Virus are scared to this.

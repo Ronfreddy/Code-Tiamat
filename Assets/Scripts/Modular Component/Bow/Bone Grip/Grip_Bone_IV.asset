@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9276fcfdc7c975e4aa917dab26e32d91, type: 3}
+  m_Name: Grip_Bone_IV
+  m_EditorClassIdentifier: 
+  partName: Bone Grip
+  partType: Grip
+  compatibleWeapon: Bow
+  partImage: {fileID: -404528705749784304, guid: 340ff5e8ada62954ab138ed64877fe86, type: 3}
+  lootSprite: {fileID: -404528705749784304, guid: 88fcb30fa4022af4485cf6261d22d176, type: 3}
+  rarity: 3
+  modifiers:
+  - key: Damage Multiplier
+    value: 19
+    color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Interval Multiplier
+    value: -1
+    color: {r: 1, g: 0, b: 0, a: 1}
+  description: Made from dinasour bone.

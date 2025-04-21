@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9276fcfdc7c975e4aa917dab26e32d91, type: 3}
+  m_Name: Bowstring_HempRope_IV
+  m_EditorClassIdentifier: 
+  partName: Hemp Rope
+  partType: Bowstring
+  compatibleWeapon: Bow
+  partImage: {fileID: -9150063326378218988, guid: f4fc80437d167e046a1ba7f73e434e78, type: 3}
+  lootSprite: {fileID: -9150063326378218988, guid: bdbd1f0e62280dc49a64de7c862fcef9, type: 3}
+  rarity: 3
+  modifiers:
+  - key: Ammo Addition
+    value: 22
+    color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Arrow Scatter Addition
+    value: 10
+    color: {r: 1, g: 0, b: 0, a: 1}
+  - key: Cooldown Multiplier
+    value: 20
+    color: {r: 0, g: 1, b: 0, a: 1}
+  description: Very thick, how this can even shoot arrows?

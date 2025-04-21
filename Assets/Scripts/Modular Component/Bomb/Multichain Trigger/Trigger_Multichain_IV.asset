@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9276fcfdc7c975e4aa917dab26e32d91, type: 3}
+  m_Name: Trigger_Multichain_IV
+  m_EditorClassIdentifier: 
+  partName: Multichain Trigger
+  partType: Trigger
+  compatibleWeapon: Bomb
+  partImage: {fileID: -4735236132639479503, guid: d7a0763ce12de7943a173ae35e618520, type: 3}
+  lootSprite: {fileID: -4735236132639479503, guid: 5b502320ffe245e46a92f44dcf900844, type: 3}
+  rarity: 3
+  modifiers:
+  - key: Multishot Addition
+    value: 5
+    color: {r: 0, g: 1, b: 0, a: 1}
+  description: T<color=purple>O</color>T<color=red>A</color><color=green>L</color>
+    <color=red>C</color>HA<color=blue>O</color><color=green>S</color>

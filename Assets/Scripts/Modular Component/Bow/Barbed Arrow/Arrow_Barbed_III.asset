@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9276fcfdc7c975e4aa917dab26e32d91, type: 3}
+  m_Name: Arrow_Barbed_III
+  m_EditorClassIdentifier: 
+  partName: Barbed Arrow
+  partType: Arrow
+  compatibleWeapon: Bow
+  partImage: {fileID: 2480554871226474196, guid: 56df72f0692bc784086533ffad2fb6ab, type: 3}
+  lootSprite: {fileID: 2480554871226474196, guid: 8396e585ae7c85041bc350a1198f62a1, type: 3}
+  rarity: 2
+  modifiers:
+  - key: Damage Addition
+    value: 2
+    color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Arrow Scatter Addition
+    value: 4
+    color: {r: 1, g: 0, b: 0, a: 1}
+  - key: Arrow Pierce Addition
+    value: 3
+    color: {r: 0, g: 1, b: 0, a: 1}
+  description: Take care, don't hurt yourself.
