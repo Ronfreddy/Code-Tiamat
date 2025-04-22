@@ -6198,6 +6198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portalPoint: {fileID: 0}
+  spawnPoints: []
   tunnels:
   - {fileID: 2218657277391716685}
   - {fileID: 1495983764670711295}

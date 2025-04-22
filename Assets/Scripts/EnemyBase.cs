@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -136,6 +137,10 @@ public abstract class EnemyBase : MonoBehaviour
         {
             OnDeath();
         }
+        GetComponent<SpriteRenderer>().DOColor(Color.white, 0.06f).OnComplete(() =>
+        {
+            GetComponent<SpriteRenderer>().DOColor(Color.red, 0.06f);
+        });
     }
 
     private void OnDeath()
