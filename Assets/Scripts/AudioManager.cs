@@ -20,6 +20,8 @@ public class AudioManager : MonoBehaviour
     public AudioSource swapWeaponSfx;
     public AudioSource pickUpSfx;
 
+    public AudioSource bgm;
+
 
     private void Awake()
     {
@@ -121,5 +123,10 @@ public class AudioManager : MonoBehaviour
     public void PlayPickUpSfx()
     {
         pickUpSfx.Play();
+    }
+
+    public void SetBGMVolume(System.Single volume)
+    {
+        bgm.volume = 0.13f * volume;
     }
 }
