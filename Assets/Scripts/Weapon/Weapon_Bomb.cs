@@ -136,7 +136,7 @@ public class Weapon_Bomb : WeaponBase
         GameObject bomb = Instantiate(bombPrefab, transform.position, Quaternion.identity);
 
         // Throw the bomb
-        bomb.GetComponent<Detonating_Bomb>().InitializeBomb(AttackDamage, ExplosionRadius, isSticky, TriggerTime);
+        bomb.GetComponent<Detonating_Bomb>().InitializeBomb(AttackDamage, ExplosionRadius, isSticky, TriggerTime, true);
         Rigidbody2D rb = bomb.GetComponent<Rigidbody2D>();
         rb.AddForce(aimDirection.normalized * throwForce, ForceMode2D.Impulse);
 
@@ -146,7 +146,7 @@ public class Weapon_Bomb : WeaponBase
             GameObject multishotBomb = Instantiate(bombPrefab, transform.position, Quaternion.identity);
             float angle = Random.Range(-180f, 180f);
             Vector2 rotatedDirection = Quaternion.Euler(0, 0, angle) * transform.right;
-            multishotBomb.GetComponent<Detonating_Bomb>().InitializeBomb(AttackDamage, ExplosionRadius, isSticky, TriggerTime);
+            multishotBomb.GetComponent<Detonating_Bomb>().InitializeBomb(AttackDamage, ExplosionRadius, isSticky, TriggerTime, false);
             Rigidbody2D multishotRb = multishotBomb.GetComponent<Rigidbody2D>();
             multishotRb.AddForce(rotatedDirection.normalized * throwForce, ForceMode2D.Impulse);
         }

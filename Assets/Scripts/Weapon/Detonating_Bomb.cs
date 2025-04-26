@@ -24,13 +24,15 @@ public class Detonating_Bomb : MonoBehaviour
     [Header("Vfx")]
     public GameObject explosionVFXPrefab;
 
-    public void InitializeBomb(float damage, float radius, bool isSticky, float triggerTime)
+    public void InitializeBomb(float damage, float radius, bool isSticky, float triggerTime, bool isFirstBomb)
     {
         explosionDamage = damage;
         explosionRadius = radius;
         canStick = isSticky;
         explosionDelay = triggerTime;
         explosionTimer = explosionDelay;
+
+        if (!isFirstBomb) tickSfx.enabled = false;
 
         if (explosionDelay <= 0.5f)
         {

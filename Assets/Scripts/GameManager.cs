@@ -65,17 +65,18 @@ public class GameManager : MonoBehaviour
         {
             mainMenu.SetActive(false);
             inGameMenu.SetActive(true);
+            inGameMenu.transform.Find("Level Select").gameObject.SetActive(false);
             inGameLobby.SetActive(true);
             player.SetActive(true);
             player.transform.position = new Vector2(0, 0);
             UIController.Instance.FadeIn();
+            InventoryManager.Instance.LoadInventory();
+            player.GetComponent<PlayerInputController>().LoadWeapon();
         }).
         AppendInterval(1.3f).
         AppendCallback(() =>
         {
             UIController.Instance.ShowCurrentLevel("G");
-            InventoryManager.Instance.LoadInventory();
-            player.GetComponent<PlayerInputController>().LoadWeapon();
         });
     }
 

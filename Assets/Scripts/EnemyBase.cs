@@ -148,7 +148,7 @@ public abstract class EnemyBase : MonoBehaviour
         onDeathEvent?.Invoke();
         DropLoot();
         AudioManager.Instance.PlayEnemyDeathSfx();
-        if (RandomChance(100 - dropLootChance))
+        if (RandomChance(LevelManager.instance.difficultySetting.healDropChance))
         {
             Instantiate(healBag, transform.position + new Vector3 (UnityEngine.Random.value, UnityEngine.Random.value), Quaternion.identity);
         }

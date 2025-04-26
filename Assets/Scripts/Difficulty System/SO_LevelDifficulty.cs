@@ -7,6 +7,7 @@ public class SO_LevelDifficulty : ScriptableObject
     public AnimationCurve fixedEnemyPerRoom;
     public AnimationCurve roomCurve;
     public float lootDropChance;
+    public float healDropChance;
 
     [Header("Melee Enemy")]
     public AnimationCurve meleeDamageCurve;

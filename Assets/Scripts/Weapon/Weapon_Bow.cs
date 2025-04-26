@@ -149,11 +149,6 @@ public class Weapon_Bow : WeaponBase
     {
         Debug.Log("Input: Attack Key Down - Bow");
 
-        // Play the attack animation
-        Animator animator = GetComponent<Animator>();
-        animator.Play("Bow_Attack");
-        animator.SetBool("isShooting", true);
-
         // Enable shoot arrow
         isHoldingFire = true;
         intervalTimer = AttackInterval;
@@ -165,7 +160,6 @@ public class Weapon_Bow : WeaponBase
         DisableShoot();
     }
 
-    //Done
     public override void UpdateStat()
     {
         ResetMultiplier();
@@ -233,8 +227,6 @@ public class Weapon_Bow : WeaponBase
         {
             return;
         }
-        Animator animator = GetComponent<Animator>();
-        animator.SetBool("isShooting", false);
 
         // Disable shoot arrow
         intervalTimer = AttackInterval;

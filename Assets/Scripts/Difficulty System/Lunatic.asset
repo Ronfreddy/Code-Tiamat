@@ -211,6 +211,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   lootDropChance: 80
+  healDropChance: 5
   meleeDamageCurve:
     serializedVersion: 2
     m_Curve:
