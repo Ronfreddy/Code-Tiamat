@@ -60,7 +60,7 @@ public class Weapon_Bow : WeaponBase
     {
         get
         {
-            return NormalReloadCooldown * MaxAmmoCount + fullReloadPenaltyTime;
+            return Mathf.Clamp(NormalReloadCooldown * 0.5f * MaxAmmoCount, 1, 5) + fullReloadPenaltyTime;
         }
     }
 

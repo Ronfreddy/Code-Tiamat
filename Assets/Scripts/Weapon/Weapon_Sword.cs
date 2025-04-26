@@ -39,7 +39,7 @@ public class Weapon_Sword : WeaponBase
     {
         get
         {
-            return Mathf.Clamp(normalSize * Mathf.Clamp(sizeMultiplier / 100, 0f, 999999f), 0.5f, 2f);
+            return Mathf.Clamp(normalSize * Mathf.Clamp(sizeMultiplier / 100, 0f, 999999f), 0.5f, 5f);
         }
     }
 
@@ -101,7 +101,7 @@ public class Weapon_Sword : WeaponBase
         Animator animator = GetComponent<Animator>();
         AudioManager.Instance.PlaySwordAttackSfx();
         animator.Play("Sword_Attack");
-        animator.SetFloat("RecoverMultiplier", (100 + cooldownMultiplier) / 100);
+        animator.SetFloat("RecoverMultiplier", (cooldownMultiplier) / 100);
         
         isAttacking = true;
         PlayerInputController.Instance.canRotate = false;

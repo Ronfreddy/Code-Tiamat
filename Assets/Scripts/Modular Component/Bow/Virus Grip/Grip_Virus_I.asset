@@ -26,6 +26,6 @@ MonoBehaviour:
     value: 6
     color: {r: 1, g: 0, b: 0, a: 1}
   - key: Damage Addition
-    value: -9
+    value: -5
     color: {r: 1, g: 0, b: 0, a: 1}
   description: Most chaotic parts. Contains malicious virus soul.

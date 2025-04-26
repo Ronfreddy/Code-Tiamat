@@ -238,7 +238,7 @@ public class PartUIController : MonoBehaviour
             spawnableTexts.Add(effectText);
         }
         GameObject descriptionText = Instantiate(effectTextPrefab, descriptionTextParent);
-        descriptionText.GetComponent<EffectText>().UpdateText(part.description, Color.white);
+        descriptionText.GetComponent<EffectText>().UpdateText(part.description, Color.white, 28);
         spawnableTexts.Add(descriptionText);
     }
 

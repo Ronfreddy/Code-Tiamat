@@ -19,13 +19,13 @@ MonoBehaviour:
   lootSprite: {fileID: -768216601172131575, guid: f6a6f9f07285ceb44b610e3a8224d99b, type: 3}
   rarity: 1
   modifiers:
-  - key: Cooldown Multiplier
-    value: 30
+  - key: Damage Addition
+    value: 3
     color: {r: 0, g: 1, b: 0, a: 1}
   - key: Interval Multiplier
     value: 30
     color: {r: 0, g: 1, b: 0, a: 1}
-  - key: Arrow Speed Addition
-    value: 150
+  - key: Arrow Scatter Addition
+    value: -5
     color: {r: 0, g: 1, b: 0, a: 1}
   description: Actually better than normal.

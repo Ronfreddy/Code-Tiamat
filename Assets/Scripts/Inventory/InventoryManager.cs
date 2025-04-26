@@ -177,6 +177,9 @@ public class InventoryManager : MonoBehaviour
     public void ResetInventory()
     {
         partInventory.equippedParts.Clear();
+        PlayerPrefs.DeleteKey("Sword");
+        PlayerPrefs.DeleteKey("Bow");
+        PlayerPrefs.DeleteKey("Bomb");
         SaveInventory();
     }
 }

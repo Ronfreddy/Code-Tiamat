@@ -22,5 +22,8 @@ MonoBehaviour:
   - key: Multishot Addition
     value: 1
     color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Damage Multiplier
+    value: -10
+    color: {r: 1, g: 0, b: 0, a: 1}
   description: T<color=green>O</color>T<color=yellow>A</color><color=red>L</color>
     <color=blue>C</color>HA<color=green>O</color><color=yellow>S</color>

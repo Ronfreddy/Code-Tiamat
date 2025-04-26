@@ -20,10 +20,10 @@ MonoBehaviour:
   rarity: 3
   modifiers:
   - key: Interval Multiplier
-    value: 300
+    value: 250
     color: {r: 0, g: 1, b: 0, a: 1}
   - key: Arrow Scatter Addition
-    value: 14
+    value: 6
     color: {r: 1, g: 0, b: 0, a: 1}
   - key: Damage Addition
     value: -3

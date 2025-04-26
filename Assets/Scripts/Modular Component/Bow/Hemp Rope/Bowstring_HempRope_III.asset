@@ -23,9 +23,12 @@ MonoBehaviour:
     value: 18
     color: {r: 0, g: 1, b: 0, a: 1}
   - key: Arrow Scatter Addition
-    value: 10
+    value: 4
     color: {r: 1, g: 0, b: 0, a: 1}
   - key: Cooldown Multiplier
     value: 15
     color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Interval Multiplier
+    value: -10
+    color: {r: 1, g: 0, b: 0, a: 1}
   description: Very thick, how this can even shoot arrows?

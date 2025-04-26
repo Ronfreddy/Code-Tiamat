@@ -19,8 +19,11 @@ MonoBehaviour:
   lootSprite: {fileID: 1691441748056476385, guid: 3fee6dd2eb7422f4d84377b06a7932d5, type: 3}
   rarity: 0
   modifiers:
+  - key: Damage Addition
+    value: 5
+    color: {r: 0, g: 1, b: 0, a: 1}
   - key: Radius Addition
-    value: 0.5
+    value: 1.5
     color: {r: 0, g: 1, b: 0, a: 1}
   - key: Trigger Time Addition
     value: 0.5

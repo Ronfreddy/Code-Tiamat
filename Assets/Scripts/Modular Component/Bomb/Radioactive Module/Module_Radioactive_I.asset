@@ -20,10 +20,7 @@ MonoBehaviour:
   rarity: 0
   modifiers:
   - key: Radius Addition
-    value: 1
-    color: {r: 0, g: 1, b: 0, a: 1}
-  - key: Damage Addition
-    value: 10
+    value: 2
     color: {r: 0, g: 1, b: 0, a: 1}
   - key: Trigger Time Addition
     value: 0.4

@@ -130,6 +130,7 @@ public abstract class WeaponBase : MonoBehaviour
         if (string.IsNullOrEmpty(json))
         {
             Debug.Log("No equipped parts found for this weapon");
+            ResetEquippedParts();
             return;
         }
         ModularPartSaveData saveData = JsonUtility.FromJson<ModularPartSaveData>(json);
@@ -145,6 +146,15 @@ public abstract class WeaponBase : MonoBehaviour
                 Debug.LogWarning("Part not found: " + partName);
             }
         }
+    }
+
+    public void ResetEquippedParts()
+    {
+        foreach (ModularPartSlot slot in slots)
+        {
+            slot.part = null;
+        }
+        SaveEquippedParts();
     }
 }
 

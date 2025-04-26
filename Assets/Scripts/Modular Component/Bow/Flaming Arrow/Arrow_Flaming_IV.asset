@@ -20,12 +20,9 @@ MonoBehaviour:
   rarity: 3
   modifiers:
   - key: Damage Multiplier
-    value: 100
+    value: 60
     color: {r: 0, g: 1, b: 0, a: 1}
-  - key: Arrow Speed Addition
-    value: -100
-    color: {r: 1, g: 0, b: 0, a: 1}
   - key: Arrow Pierce Addition
-    value: 2
+    value: 1
     color: {r: 0, g: 1, b: 0, a: 1}
   description: Sadly cannot ignite objects because dev is lazy.

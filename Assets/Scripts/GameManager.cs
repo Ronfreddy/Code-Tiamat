@@ -89,17 +89,18 @@ public class GameManager : MonoBehaviour
     public void OnResetInventorySelected()
     {
         AudioManager.Instance.PlayClickSfx();
-        foreach(GameObject weapon in player.GetComponent<PlayerInputController>().weapons)
-        {
-            foreach (ModularPartSlot part in weapon.GetComponent<WeaponBase>().slots)
-            {
-                if (part.part != null)
-                {
-                    weapon.GetComponent<WeaponBase>().UnequipPart(part.part.partType);
-                }
-            }
-        }
+        //foreach(GameObject weapon in player.GetComponent<PlayerInputController>().weapons)
+        //{
+        //    foreach (ModularPartSlot part in weapon.GetComponent<WeaponBase>().slots)
+        //    {
+        //        if (part.part != null)
+        //        {
+        //            weapon.GetComponent<WeaponBase>().UnequipPart(part.part.partType);
+        //        }
+        //    }
+        //}
         InventoryManager.Instance.ResetInventory();
+        PlayerInputController.Instance.LoadWeapon();
     }
 
     public void OnResetTutorialSelected()

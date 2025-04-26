@@ -28,16 +28,16 @@ MonoBehaviour:
   - key: Radius Addition
     value: 2
     color: {r: 0, g: 1, b: 0, a: 1}
-  - key: Multishot Addition
-    value: -99
-    color: {r: 1, g: 0, b: 0, a: 1}
   - key: Trigger Time Addition
     value: -0.4
     color: {r: 0, g: 1, b: 0, a: 1}
+  - key: Multishot Addition
+    value: -99
+    color: {r: 1, g: 0, b: 0, a: 1}
   - key: Charge Time Addition
     value: 1
     color: {r: 1, g: 0, b: 0, a: 1}
   - key: Cooldown Multiplier
-    value: -50
+    value: -40
     color: {r: 1, g: 0, b: 0, a: 1}
   description: Sacrifices everything for massive destruction.

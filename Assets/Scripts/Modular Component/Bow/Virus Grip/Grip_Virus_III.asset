@@ -20,12 +20,12 @@ MonoBehaviour:
   rarity: 2
   modifiers:
   - key: Interval Multiplier
-    value: 240
+    value: 180
     color: {r: 0, g: 1, b: 0, a: 1}
   - key: Arrow Scatter Addition
-    value: 14
+    value: 6
     color: {r: 1, g: 0, b: 0, a: 1}
   - key: Damage Addition
-    value: -5
+    value: -3
     color: {r: 1, g: 0, b: 0, a: 1}
   description: Most chaotic parts. Contains malicious virus soul.

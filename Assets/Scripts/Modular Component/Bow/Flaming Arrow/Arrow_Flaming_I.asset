@@ -20,11 +20,8 @@ MonoBehaviour:
   rarity: 0
   modifiers:
   - key: Damage Multiplier
-    value: 20
+    value: 60
     color: {r: 0, g: 1, b: 0, a: 1}
-  - key: Arrow Speed Addition
-    value: -100
-    color: {r: 1, g: 0, b: 0, a: 1}
   - key: Arrow Pierce Addition
     value: 1
     color: {r: 0, g: 1, b: 0, a: 1}

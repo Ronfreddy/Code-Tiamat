@@ -12,10 +12,14 @@ public class EffectText : MonoBehaviour
     }
 
     // This can act as a normal text (description) too!
-    public void UpdateText(string text, Color color)
+    public void UpdateText(string text, Color color, float size = 0)
     {
         effectText.text = text;
         effectText.color = color;
+        if (size > 0)
+        {
+            effectText.fontSize = size;
+        }
     }
 }
 

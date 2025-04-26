@@ -19,10 +19,16 @@ MonoBehaviour:
   lootSprite: {fileID: 1691441748056476385, guid: 3fee6dd2eb7422f4d84377b06a7932d5, type: 3}
   rarity: 3
   modifiers:
+  - key: Damage Addition
+    value: 15
+    color: {r: 0, g: 1, b: 0, a: 1}
   - key: Radius Addition
     value: 2
     color: {r: 0, g: 1, b: 0, a: 1}
   - key: Trigger Time Addition
     value: 0.5
     color: {r: 1, g: 0, b: 0, a: 1}
+  - key: Multishot Addition
+    value: 1
+    color: {r: 0, g: 1, b: 0, a: 1}
   description: Further but too lag.

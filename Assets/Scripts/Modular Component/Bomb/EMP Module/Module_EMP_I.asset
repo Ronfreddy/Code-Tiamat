@@ -19,10 +19,10 @@ MonoBehaviour:
   lootSprite: {fileID: 1992566182415991804, guid: fcfbd78979817f24885b55206d3a9e6e, type: 3}
   rarity: 0
   modifiers:
-  - key: Throw Force Multiplier
-    value: 20
+  - key: Damage Addition
+    value: 5
     color: {r: 0, g: 1, b: 0, a: 1}
-  - key: Charge Time Addition
-    value: -0.2
+  - key: Damage Multiplier
+    value: 15
     color: {r: 0, g: 1, b: 0, a: 1}
   description: Virus are scared to this.

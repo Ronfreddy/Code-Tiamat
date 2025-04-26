@@ -19,13 +19,13 @@ MonoBehaviour:
   lootSprite: {fileID: -4260298431826987427, guid: fa552f1679e4d4a44be590102bad20f7, type: 3}
   rarity: 0
   modifiers:
+  - key: Damage Multiplier
+    value: 7
+    color: {r: 0, g: 1, b: 0, a: 1}
   - key: Trigger Time Addition
     value: -10
     color: {r: 0, g: 1, b: 0, a: 1}
   - key: Cooldown Multiplier
     value: -20
     color: {r: 1, g: 0, b: 0, a: 1}
-  - key: Damage Multiplier
-    value: 7
-    color: {r: 0, g: 1, b: 0, a: 1}
-  description: Use it if you want instant nuke.
+  description: Run faster.

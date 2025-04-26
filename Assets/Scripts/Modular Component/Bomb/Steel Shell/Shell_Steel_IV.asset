@@ -20,7 +20,7 @@ MonoBehaviour:
   rarity: 3
   modifiers:
   - key: Damage Multiplier
-    value: 39
+    value: 100
     color: {r: 0, g: 1, b: 0, a: 1}
   - key: Throw Force Multiplier
     value: -20
