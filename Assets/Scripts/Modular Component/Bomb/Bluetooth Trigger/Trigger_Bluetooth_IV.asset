@@ -31,4 +31,4 @@ MonoBehaviour:
   - key: Multishot Addition
     value: 1
     color: {r: 0, g: 1, b: 0, a: 1}
-  description: Further but too lag.
+  description: Your bluetooth device is connected successfully.

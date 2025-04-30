@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 [CustomPropertyDrawer(typeof(Sprite))]
 public class SpritePreviewDrawer : PropertyDrawer
 {
@@ -31,3 +32,4 @@ public class SpritePreviewDrawer : PropertyDrawer
         return EditorGUIUtility.singleLineHeight + 66; // Adjust height for preview
     }
 }
+#endif

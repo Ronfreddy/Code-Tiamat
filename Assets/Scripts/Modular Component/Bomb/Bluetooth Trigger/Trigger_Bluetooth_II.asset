@@ -28,4 +28,4 @@ MonoBehaviour:
   - key: Trigger Time Addition
     value: 0.5
     color: {r: 1, g: 0, b: 0, a: 1}
-  description: Further but too lag.
+  description: Your bluetooth device is connected successfully.

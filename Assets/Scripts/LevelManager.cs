@@ -224,9 +224,6 @@ public class LevelManager : MonoBehaviour
 
     private void ConnectRooms(RoomCoordinates room1, RoomCoordinates room2, Direction direction)
     {
-        // Connect the two rooms here
-        // You can use the room coordinates to determine which rooms to connect
-        // For example, you can check if there is a room above, below, left, or right of the current room
         GameObject roomObject1 = roomDictionary[room1];
         GameObject roomObject2 = roomDictionary[room2];
         RoomGrid roomGrid1 = roomObject1.GetComponent<RoomGrid>();

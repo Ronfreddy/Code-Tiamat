@@ -127,6 +127,6 @@ public class AudioManager : MonoBehaviour
 
     public void SetBGMVolume(System.Single volume)
     {
-        bgm.volume = 0.13f * volume;
+        bgm.volume = volume;
     }
 }
